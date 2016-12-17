@@ -23,13 +23,13 @@ val oauth2 = project.in(file("."))
         normalizedName := "akka-oauth2",
         libraryDependencies ++= Seq(
             "com.typesafe.akka" %% "akka-actor" % "2.4.12",
-            "com.typesafe.akka" %% "akka-http-core" % "3.0.0-RC1",
-            "com.typesafe.akka" %% "akka-http-experimental" % "2.4.9",
+            "com.typesafe.akka" %% "akka-http" % "3.0.0-RC1",
             "eu.tilk" %% "scala-jwt" % "0.0.1-SNAPSHOT"
         ),
         organization := "eu.tilk",
         version := "0.0.1-SNAPSHOT",
         scalaVersion := "2.11.8",
+        resolvers += Resolver.sonatypeRepo("snapshots"),
         licenses += ("LGPL 3.0", url("https://opensource.org/licenses/LGPL-3.0")),
         scmInfo := Some(ScmInfo(
             url("https://github.com/tilk/akka-oauth2"),
