@@ -29,6 +29,7 @@ val oauth2 = project.in(file("."))
         ),
         organization := "eu.tilk",
         version := "0.0.1-SNAPSHOT",
+        resolvers += Resolver.sonatypeRepo("snapshots"),
         licenses += ("LGPL 3.0", url("https://opensource.org/licenses/LGPL-3.0")),
         scmInfo := Some(ScmInfo(
             url("https://github.com/tilk/akka-oauth2"),
